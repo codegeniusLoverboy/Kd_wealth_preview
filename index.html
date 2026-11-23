@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K.D WEALTH &amp; MARKET | Freeborn FX</title>
+<style>
+:root{--n1:#0a1628;--n2:#0f2040;--n3:#16294d;--gold:#d4af37;--gold2:#e8c963;--txt:#fff;--mut:#9fb0c9;--line:#243a63;--ok:#3ecf8e;--bad:#ef6b6b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:76px;color-scheme:dark}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--n1);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font-family:inherit}
+h1,h2,h3{margin:0;line-height:1.15}
+.w{max-width:1120px;margin:auto;padding:0 20px}
+section{padding:76px 0}.alt{background:var(--n2)}
+.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase}
+h2{font-size:clamp(1.7rem,5vw,2.4rem);margin:8px 0 12px;font-weight:800}
+.lead{color:var(--mut);max-width:620px;margin:0 0 34px}
+.btn{display:inline-block;border:1px solid var(--gold);background:var(--gold);color:#0a1628;font-weight:700;padding:13px 24px;border-radius:8px;cursor:pointer;font-size:.98rem;transition:transform .15s,background .2s}
+.btn:hover{background:var(--gold2)}.btn:active{transform:scale(.98)}
+.btn.o{background:transparent;color:#fff;border-color:#4a6290}.btn.o:hover{border-color:var(--gold);color:var(--gold)}
+.btn.sm{padding:8px 16px;font-size:.88rem}.btn.full{width:100%}
+.card{background:var(--n2);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.alt .card{background:var(--n1)}
+.grid{display:grid;gap:18px}
+@media(min-width:700px){.g2{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.g3{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:700px) and (max-width:959px){.g3{grid-template-columns:1fr 1fr}}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:99px;border:1px solid var(--gold);color:var(--gold)}
+/* nav */
+header.nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(10,22,40,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;letter-spacing:.04em;font-size:1.02rem}.brand b{color:var(--gold)}
+.links{display:none;gap:22px;align-items:center;font-size:.9rem;color:var(--mut)}
+.links a,.links button.l{background:none;border:0;color:inherit;font-size:inherit;cursor:pointer;padding:0}
+.links a:hover,.links button.l:hover{color:var(--gold)}
+.burger{background:none;border:1px solid var(--line);color:#fff;border-radius:8px;width:42px;height:42px;font-size:1.3rem;cursor:pointer}
+.mob{display:flex;flex-direction:column;padding:8px 20px 20px;border-top:1px solid var(--line);background:var(--n1)}
+.mob a,.mob button.l{background:none;border:0;color:#fff;text-align:left;padding:12px 0;font-size:1rem;border-bottom:1px solid var(--line);cursor:pointer}
+@media(min-width:980px){.links{display:flex}.burger{display:none}.mob{display:none}}
+/* hero */
+.hero{padding:120px 0 70px;background:radial-gradient(circle at 85% 10%,rgba(212,175,55,.12),transparent 50%)}
+.hero .w{display:grid;gap:40px;align-items:center}
+@media(min-width:900px){.hero .w{grid-template-columns:1.15fr 1fr}}
+.hero h1{font-size:clamp(2.3rem,8vw,4rem);font-weight:800;letter-spacing:-.01em}.hero h1 span{color:var(--gold)}
+.hero p{color:var(--mut);font-size:1.08rem;margin:18px 0 28px;max-width:540px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.photo{aspect-ratio:4/5;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,var(--n3),var(--n2));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;position:relative;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo svg{width:96px;height:96px;opacity:.55}
+.photo small{color:var(--mut);margin-top:12px;max-width:220px}
+.sig{position:absolute;left:0;right:0;bottom:0;padding:14px;text-align:center;font-weight:800;letter-spacing:.3em;color:var(--gold);background:rgba(10,22,40,.82);border-top:1px solid var(--line);font-size:.85rem}
+/* offers */
+.price{font-size:2.3rem;font-weight:800;color:var(--gold);margin:10px 0 4px}.price.tbc{font-size:1.1rem;color:var(--mut);padding:14px 0}
+.card ul{list-style:none;padding:0;margin:14px 0 22px;color:var(--mut)}
+.card li{padding:6px 0;border-bottom:1px solid var(--line)}.card li:before{content:"✓  ";color:var(--gold)}
+.feat{border-color:var(--gold)}
+/* table */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;min-width:640px;background:var(--n1)}
+th,td{padding:13px 16px;text-align:left;font-size:.92rem;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--gold);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;background:var(--n2)}
+.win{color:var(--ok);font-weight:700}.loss{color:var(--bad);font-weight:700}
+.note{color:var(--mut);font-size:.85rem;margin-top:14px;font-style:italic}
+.q{font-size:1.02rem}.who{margin-top:14px;color:var(--mut);font-size:.88rem}
+/* forms */
+label{display:block;font-size:.82rem;color:var(--mut);margin:12px 0 5px}
+input,textarea,select{width:100%;background:var(--n1);border:1px solid var(--line);border-radius:8px;color:#fff;padding:12px 14px;font:inherit}
+input:focus,textarea:focus{outline:none;border-color:var(--gold)}
+.alt input,.alt textarea{background:var(--n1)}
+/* modal */
+.ov{position:fixed;inset:0;z-index:100;background:rgba(3,8,18,.78);display:grid;place-items:center;padding:16px;overflow-y:auto}
+.modal{background:var(--n2);border:1px solid var(--line);border-radius:16px;padding:28px;width:100%;max-width:440px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.x{position:absolute;top:10px;right:14px;background:none;border:0;color:var(--mut);font-size:1.6rem;cursor:pointer}
+.sum{display:flex;justify-content:space-between;align-items:center;background:var(--n1);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.sum b{color:var(--gold);font-size:1.2rem}
+.okb{background:rgba(62,207,142,.12);border:1px solid var(--ok);color:var(--ok);padding:14px;border-radius:10px;text-align:center;font-weight:700;margin:14px 0}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:200;background:var(--gold);color:#0a1628;padding:12px 20px;border-radius:10px;font-weight:600;font-size:.9rem;max-width:92vw;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+/* members */
+.mtop{border-bottom:1px solid var(--line);background:var(--n2);position:sticky;top:0;z-index:40;padding-top:env(safe-area-inset-top,0px)}
+.mtop .w{display:flex;justify-content:space-between;align-items:center;height:60px;gap:10px}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:14px 0;margin-bottom:10px}
+.tab{background:var(--n2);border:1px solid var(--line);color:var(--mut);border-radius:99px;padding:8px 16px;cursor:pointer;white-space:nowrap;font-size:.88rem}
+.tab.on{background:var(--gold);color:#0a1628;border-color:var(--gold);font-weight:700}
+.bar{height:8px;background:var(--n3);border-radius:9px;overflow:hidden;margin:10px 0 6px}.bar i{display:block;height:100%;background:var(--gold);transition:width .4s}
+.cc{cursor:pointer;transition:transform .2s,border-color .2s}.cc:hover{transform:translateY(-4px);border-color:var(--gold)}
+.vid{aspect-ratio:16/9;background:linear-gradient(135deg,var(--n3),var(--n1));border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:2.6rem;text-align:center}
+.vid small{display:block;font-size:.8rem;color:var(--mut)}
+.les{display:flex;align-items:center;gap:12px;padding:13px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.chk{width:22px;height:22px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font-size:.75rem;flex:none}.chk.d{background:var(--gold);border-color:var(--gold);color:#0a1628}
+.li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+footer{border-top:1px solid var(--line);padding:50px 0 30px;background:#071120}
+footer .grid{margin-bottom:28px}footer h3{font-size:.85rem;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+footer a,footer button.l{display:block;background:none;border:0;color:var(--mut);padding:4px 0;cursor:pointer;font-size:.92rem;text-align:left}footer a:hover,footer button.l:hover{color:var(--gold)}
+.copy{border-top:1px solid var(--line);padding-top:20px;color:var(--mut);font-size:.82rem}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script>
+const {useState}=React, h=htm.bind(React.createElement);
+
+/* ===== EDIT ME: configuration (leave empty until the owner confirms) ===== */
+const CONFIG={
+  photoUrl:"",            // Freeborn FX photograph URL
+  whatsappLink:"",        // e.g. https://wa.me/<number>
+  email:"",               // contact email
+  socials:{Instagram:"",Telegram:"",YouTube:"",TikTok:""}
+};
+/* Replace with a real payment provider call (Stripe, Paystack, Flutterwave...) */
+const startPayment=(offer,customer)=>new Promise(r=>setTimeout(()=>r({demo:true}),700));
+
+const OFFERS=[
+ {id:"mentorship",t:"Lifetime Mentorship",price:"£175",cta:"Get Lifetime Mentorship",f:["Structured forex education","Lifetime mentorship access","Learning resources"],star:true},
+ {id:"signals",t:"Signal Group",price:"$21",cta:"Join Signal Group",f:["Forex market analysis","Trading opportunities","Signal group access"]},
+ {id:"premium",t:"Premium Learning",price:null,cta:"Learn More",f:["Advanced trading education","Trading strategy lessons","Learning resources"]}
+];
+const TRADES=[
+ ["EUR/USD","Buy",1.0850,1.0885,"03 Nov 2026"],["GBP/USD","Sell",1.2740,1.2705,"05 Nov 2026"],
+ ["USD/JPY","Buy",149.20,148.85,"09 Nov 2026"],["AUD/USD","Sell",0.6580,0.6552,"12 Nov 2026"],["USD/CAD","Sell",1.3820,1.3846,"16 Nov 2026"]
+].map(([p,s,en,ex,d])=>{const pip=p.includes("JPY")?.01:.0001,pips=Math.round((ex-en)*(s==="Buy"?1:-1)/pip);return{p,s,en,ex,d,pips}});
+const COURSES=[
+ {id:1,t:"Forex Foundations",d:"Market structure, pairs, pips and how orders work.",l:["How the forex market works","Currency pairs and pips","Order types","Reading a price chart","Choosing a broker"]},
+ {id:2,t:"Technical Analysis",d:"Support, resistance, trends and price-action basics.",l:["Support and resistance","Trend identification","Candlestick patterns","Entries and exits"]},
+ {id:3,t:"Risk and Psychology",d:"Position sizing, stop losses and disciplined execution.",l:["Position sizing","Stop-loss placement","Managing emotions","Keeping a trading journal"]}
+];
+const SIGNALS=[["EUR/USD","Watching 1.0850 support","Sample update"],["GBP/USD","Range-bound ahead of data","Sample update"],["USD/JPY","Awaiting pullback entry","Sample update"]];
+const PDFS=["Forex Starter Guide","Risk Management Cheat Sheet","Trading Journal Template"];
+const NAV=[["Home","#home"],["Mentorship","#mentorship"],["Signals","#signals"],["Trading Results","#results"],["About","#about"],["Contact","#contact"]];
+
+function Modal({onClose,children}){return h`<div className="ov" onClick=${e=>e.target===e.currentTarget&&onClose()}><div className="modal"><button className="x" aria-label="Close" onClick=${onClose}>×</button>${children}</div></div>`}
+
+function Nav({openLogin,openOffer}){
+ const [o,setO]=useState(false);
+ return h`<header className="nav"><div className="w"><a href="#home" className="brand">K.D <b>WEALTH & MARKET</b></a>
+ <nav className="links">${NAV.map(([n,l])=>h`<a key=${n} href=${l}>${n}</a>`)}<button className="l" onClick=${openLogin}>Login</button><a className="btn sm" href="#mentorship">Join Now</a></nav>
+ <button className="burger" aria-label="Menu" onClick=${()=>setO(!o)}>${o?"×":"☰"}</button></div>
+ ${o&&h`<div className="mob" onClick=${()=>setO(false)}>${NAV.map(([n,l])=>h`<a key=${n} href=${l}>${n}</a>`)}<button className="l" onClick=${openLogin}>Login</button><a className="btn full" style=${{marginTop:14,textAlign:"center"}} href="#mentorship">Join Now</a></div>`}</header>`;
+}
+
+function Hero({openOffer}){
+ return h`<section className="hero" id="home"><div className="w"><div>
+ <span className="eyebrow">Forex Education & Mentorship</span>
+ <h1 style=${{marginTop:12}}>TRADE SMARTER. <span>BUILD YOUR EDGE.</span></h1>
+ <p>Take your trading journey to the next level with structured forex education, professional market insights and mentorship.</p>
+ <div className="row"><a className="btn" href="#mentorship">Explore Mentorship</a><button className="btn o" onClick=${()=>openOffer(OFFERS[1])}>Join Signal Group</button></div></div>
+ <div className="photo">${CONFIG.photoUrl?h`<img src=${CONFIG.photoUrl} alt="Freeborn FX"/>`:h`<svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><small>Mentor photograph placeholder. Set <b>CONFIG.photoUrl</b> to add the real image.</small>`}<div className="sig">FREEBORN FX</div></div></div></section>`;
+}
+
+function Offers({openOffer}){
+ return h`<section className="alt" id="offers"><div className="w"><span className="eyebrow">Services & Offers</span><h2 id="mentorship">Choose how you want to learn</h2><p className="lead">Education-first programmes from K.D Wealth & Market, delivered under the Freeborn FX brand.</p>
+ <div className="grid g3">${OFFERS.map(o=>h`<div key=${o.id} id=${o.id==="signals"?"signals":undefined} className=${"card"+(o.star?" feat":"")}>
+ ${o.star&&h`<span className="tag">Flagship</span>`}<h3 style=${{marginTop:o.star?10:0}}>${o.t}</h3>
+ ${o.price?h`<div className="price">${o.price}</div>`:h`<div className="price tbc">Pricing to be confirmed</div>`}
+ <ul>${o.f.map(x=>h`<li key=${x}>${x}</li>`)}</ul><button className=${"btn full"+(o.star?"":" o")} onClick=${()=>openOffer(o)}>${o.cta}</button></div>`)}</div></div></section>`;
+}
+
+function Results(){
+ return h`<section id="results"><div className="w"><span className="eyebrow">Trading Results</span><h2>Transparent trade history</h2><p className="lead">This is how the brand can present its trade log once real, verified results are supplied.</p>
+ <div className="tw"><table><thead><tr>${["Date","Pair","Direction","Entry","Exit","Pips","Status"].map(c=>h`<th key=${c}>${c}</th>`)}</tr></thead><tbody>
+ ${TRADES.map(t=>h`<tr key=${t.d}><td>${t.d}</td><td><b>${t.p}</b></td><td>${t.s}</td><td>${t.en}</td><td>${t.ex}</td><td className=${t.pips>=0?"win":"loss"}>${t.pips>0?"+":""}${t.pips}</td><td className=${t.pips>=0?"win":"loss"}>${t.pips>=0?"Win":"Loss"}</td></tr>`)}</tbody></table></div>
+ <p className="note">Illustrative demonstration data — actual trading results will be provided by the account owner.</p></div></section>`;
+}
+
+function Testimonials(){
+ return h`<section className="alt"><div className="w"><span className="eyebrow">Testimonials</span><h2>Student feedback</h2><p className="lead">Placeholder layout for genuine student feedback.</p>
+ <div className="grid g3">${[1,2,3].map(i=>h`<div className="card" key=${i}><div style=${{color:"var(--gold)",letterSpacing:3}}>★★★★★</div><p className="q">“Sample testimonial — replace with genuine student feedback.”</p><div className="who">Student name placeholder · Location placeholder</div></div>`)}</div></div></section>`;
+}
+
+function About(){
+ const items=[["Mentor biography","Placeholder: add Freeborn FX’s biography here."],["Trading experience","Placeholder: to be provided by the owner."],["Trading philosophy","Placeholder: describe the approach to the markets."],["Teaching approach","Placeholder: explain how lessons and mentorship work."],["Brand mission","Placeholder: K.D Wealth & Market’s educational mission."]];
+ return h`<section id="about"><div className="w"><span className="eyebrow">About</span><h2>About K.D Wealth & Market</h2><p className="lead">An educational platform for forex learners, associated with the Freeborn FX trading brand. All content below is editable placeholder text.</p>
+ <div className="grid g3">${items.map(([t,d])=>h`<div className="card" key=${t}><h3 style=${{color:"var(--gold)",fontSize:"1.05rem",marginBottom:8}}>${t}</h3><p style=${{margin:0,color:"var(--mut)"}}>${d}</p></div>`)}</div></div></section>`;
+}
+
+function Contact({notify}){
+ const [sent,setSent]=useState(false);
+ const link=(label,url)=>url?h`<a className="btn o sm" href=${url} target="_blank" rel="noopener" key=${label}>${label}</a>`:h`<button key=${label} className="btn o sm" onClick=${()=>notify(label+" link not set yet. Add it in CONFIG.")}>${label}</button>`;
+ return h`<section className="alt" id="contact"><div className="w"><span className="eyebrow">Contact</span><h2>Get in touch</h2><p className="lead">Contact details are placeholders until the owner confirms them.</p>
+ <div className="grid g2"><div className="card"><h3>Reach out</h3><div className="row" style=${{margin:"16px 0"}}>
+ ${CONFIG.whatsappLink?h`<a className="btn" href=${CONFIG.whatsappLink} target="_blank" rel="noopener">WhatsApp</a>`:h`<button className="btn" onClick=${()=>notify("WhatsApp link not set yet. Add it in CONFIG.whatsappLink.")}>WhatsApp</button>`}
+ ${CONFIG.email?h`<a className="btn o" href=${"mailto:"+CONFIG.email}>Email</a>`:h`<button className="btn o" onClick=${()=>notify("Email address not set yet. Add it in CONFIG.email.")}>Email</button>`}</div>
+ <div className="row">${Object.entries(CONFIG.socials).map(([k,v])=>link(k,v))}</div></div>
+ <div className="card"><h3>Send an enquiry</h3>${sent?h`<div className="okb">Demo only: this message was not sent.</div>`:h`<div><label>Name</label><input placeholder="Your name"/><label>Email</label><input type="email" placeholder="you@example.com"/><label>Message</label><textarea rows="4" placeholder="How can we help?"></textarea><button className="btn full" style=${{marginTop:16}} onClick=${()=>setSent(true)}>Send Enquiry</button></div>`}</div></div></div></section>`;
+}
+
+function Footer({openLogin,notify}){
+ return h`<footer><div className="w"><div className="grid g3"><div><div className="brand">K.D <b>WEALTH & MARKET</b></div><p style=${{color:"var(--mut)",fontSize:".9rem"}}>Forex education and mentorship. Trading brand: Freeborn FX.</p></div>
+ <div><h3>Quick links</h3><a href="#home">Home</a><a href="#mentorship">Mentorship</a><a href="#signals">Signals</a><a href="#contact">Contact</a><button className="l" onClick=${openLogin}>Member Login</button></div>
+ <div><h3>Social</h3>${Object.entries(CONFIG.socials).map(([k,v])=>v?h`<a key=${k} href=${v} target="_blank" rel="noopener">${k}</a>`:h`<button key=${k} className="l" onClick=${()=>notify(k+" link not set yet.")}>${k}</button>`)}</div></div>
+ <div className="copy">© 2026 K.D Wealth & Market. All rights reserved. Prototype for presentation only. Trading involves risk and no results are guaranteed.</div></div></footer>`;
+}
+
+function Checkout({offer,onClose,enter}){
+ const [n,setN]=useState(""),[e,setE]=useState(""),[st,setSt]=useState("form"),[err,setErr]=useState("");
+ const enq=!offer.price;
+ const pay=async()=>{if(!n.trim()||!/\S+@\S+\.\S+/.test(e)){setErr("Please enter your name and a valid email.");return}setErr("");setSt("busy");await startPayment(offer,{n,e});setSt("done")};
+ return h`<${Modal} onClose=${onClose}>${st==="done"?h`<div><h3>${enq?"Demo enquiry sent":"Demo payment successful"}</h3><div className="okb">Simulation only. No real payment was taken and no real access was granted.</div><p style=${{color:"var(--mut)"}}>Selected: ${offer.t}</p><button className="btn full" onClick=${()=>enter(n)}>Enter Members Area (Demo)</button></div>`:h`<div>
+ <span className="eyebrow">${enq?"Enquiry":"Demo Checkout"}</span><h3 style=${{marginTop:6}}>${offer.t}</h3>
+ <div className="sum"><span>${enq?"Price":"Total"}</span><b>${offer.price||"To be confirmed"}</b></div>
+ <label>Full name</label><input value=${n} onChange=${x=>setN(x.target.value)} placeholder="Your name"/><label>Email</label><input type="email" value=${e} onChange=${x=>setE(x.target.value)} placeholder="you@example.com"/>
+ ${err&&h`<p style=${{color:"var(--bad)",fontSize:".85rem",margin:"10px 0 0"}}>${err}</p>`}
+ <button className="btn full" style=${{marginTop:18}} disabled=${st==="busy"} onClick=${pay}>${st==="busy"?"Processing…":enq?"Send Demo Enquiry":"Pay Now (Demo)"}</button>
+ <p className="note" style=${{textAlign:"center"}}>Frontend demonstration only. Nothing is charged.</p></div>`}<//>`;
+}
+
+function Login({onClose,enter}){
+ const [e,setE]=useState("demo@example.com"),[p,setP]=useState("demo1234");
+ return h`<${Modal} onClose=${onClose}><span className="eyebrow">Members</span><h3 style=${{marginTop:6}}>Demo login</h3><p style=${{color:"var(--mut)",fontSize:".9rem"}}>Simulated sign-in. No real authentication yet.</p>
+ <label>Email</label><input value=${e} onChange=${x=>setE(x.target.value)}/><label>Password</label><input type="password" value=${p} onChange=${x=>setP(x.target.value)}/>
+ <button className="btn full" style=${{marginTop:18}} onClick=${()=>enter(e.split("@")[0]||"Member")}>Log In</button><//>`;
+}
+
+function Members({name,exit,notify}){
+ const [tab,setTab]=useState("Dashboard"),[course,setCourse]=useState(null),[done,setDone]=useState({1:[0,1],2:[0],3:[]});
+ const pct=c=>Math.round((done[c.id]||[]).length/c.l.length*100);
+ const toggle=(c,i)=>setDone(d=>{const a=d[c.id]||[];return{...d,[c.id]:a.includes(i)?a.filter(x=>x!==i):[...a,i]}});
+ const tabs=["Dashboard","My Courses","Video Tutorials","PDF Materials","Signal Updates","Account Settings"];
+ const CourseCard=c=>h`<div key=${c.id} className="card cc" onClick=${()=>{setTab("My Courses");setCourse(c)}}><h3>${c.t}</h3><p style=${{color:"var(--mut)",margin:"6px 0 0",fontSize:".92rem"}}>${c.d}</p><div className="bar"><i style=${{width:pct(c)+"%"}}></i></div><small style=${{color:"var(--mut)"}}>${pct(c)}% complete</small></div>`;
+ let body;
+ if(tab==="My Courses"&&course){const c=course;body=h`<div><button className="btn o sm" onClick=${()=>setCourse(null)}>← All courses</button><h2 style=${{marginTop:16}}>${c.t}</h2>
+ <div className="vid"><div>▶<small>Video placeholder</small></div></div><div className="bar"><i style=${{width:pct(c)+"%"}}></i></div><small style=${{color:"var(--mut)"}}>${pct(c)}% complete</small>
+ <div style=${{marginTop:14}}>${c.l.map((l,i)=>h`<div className="les" key=${l} onClick=${()=>toggle(c,i)}><span className=${"chk"+((done[c.id]||[]).includes(i)?" d":"")}>${(done[c.id]||[]).includes(i)?"✓":""}</span><span>Lesson ${i+1}: ${l}</span></div>`)}</div></div>`}
+ else if(tab==="My Courses")body=h`<div><h2>My Courses</h2><div className="grid g3" style=${{marginTop:20}}>${COURSES.map(CourseCard)}</div></div>`;
+ else if(tab==="Video Tutorials")body=h`<div><h2>Video Tutorials</h2><div className="grid g3" style=${{marginTop:20}}>${["Platform setup","Reading a chart","Your first trade plan"].map(t=>h`<div key=${t}><div className="vid" style=${{cursor:"pointer"}} onClick=${()=>notify("Demo only: video player will go here.")}><div>▶<small>${t}</small></div></div></div>`)}</div></div>`;
+ else if(tab==="PDF Materials")body=h`<div><h2>PDF Learning Materials</h2><div className="card" style=${{marginTop:20}}>${PDFS.map(p=>h`<div className="li" key=${p}><span>📄 ${p}</span><button className="btn sm o" onClick=${()=>notify("Demo only: no file attached yet.")}>Download</button></div>`)}</div></div>`;
+ else if(tab==="Signal Updates")body=h`<div><h2>Signal Updates</h2><p className="note">Sample content for layout purposes only.</p><div className="card" style=${{marginTop:14}}>${SIGNALS.map(([p,t,s])=>h`<div className="li" key=${p}><div><b>${p}</b><div style=${{color:"var(--mut)",fontSize:".9rem"}}>${t}</div></div><span className="tag">${s}</span></div>`)}</div></div>`;
+ else if(tab==="Account Settings")body=h`<div><h2>Account Settings</h2><div className="card" style=${{marginTop:20,maxWidth:480}}><label>Display name</label><input defaultValue=${name}/><label>Email</label><input defaultValue=${name+"@example.com"}/><button className="btn" style=${{marginTop:18}} onClick=${()=>notify("Demo only: settings are not saved.")}>Save Changes</button></div></div>`;
+ else body=h`<div><h2>Welcome, ${name}</h2><p className="lead" style=${{marginBottom:20}}>This is a demo dashboard. No real membership has been granted.</p>
+ <div className="grid g3" style=${{marginBottom:22}}><div className="card"><div className="eyebrow">Membership status</div><h3 style=${{marginTop:8}}>Demo Member</h3></div><div className="card"><div className="eyebrow">Courses</div><h3 style=${{marginTop:8}}>${COURSES.length} enrolled</h3></div><div className="card"><div className="eyebrow">Signal updates</div><h3 style=${{marginTop:8}}>${SIGNALS.length} new (sample)</h3></div></div>
+ <h3 style=${{marginBottom:14}}>Continue learning</h3><div className="grid g3">${COURSES.map(CourseCard)}</div></div>`;
+ return h`<div><div className="mtop"><div className="w"><span className="brand">K.D <b>MEMBERS</b></span><div className="row"><button className="btn o sm" onClick=${exit}>← Website</button><button className="btn sm" onClick=${exit}>Logout</button></div></div></div>
+ <div className="w" style=${{paddingBottom:60}}><div className="tabs">${tabs.map(t=>h`<button key=${t} className=${"tab"+(tab===t?" on":"")} onClick=${()=>{setTab(t);setCourse(null)}}>${t}</button>`)}</div>${body}</div></div>`;
+}
+
+function App(){
+ const [view,setView]=useState("site"),[modal,setModal]=useState(null),[user,setUser]=useState("Member"),[toast,setToast]=useState("");
+ const notify=m=>{setToast(m);setTimeout(()=>setToast(""),2600)};
+ const enter=n=>{setUser((n||"Member").trim()||"Member");setModal(null);setView("members");window.scrollTo(0,0)};
+ const exit=()=>{setView("site");window.scrollTo(0,0)};
+ const openLogin=()=>setModal({t:"login"}),openOffer=o=>setModal({t:"offer",o});
+ return h`<div>${view==="members"?h`<${Members} name=${user} exit=${exit} notify=${notify}/>`:h`<div><${Nav} openLogin=${openLogin}/><${Hero} openOffer=${openOffer}/><${Offers} openOffer=${openOffer}/><${Results}/><${Testimonials}/><${About}/><${Contact} notify=${notify}/><${Footer} openLogin=${openLogin} notify=${notify}/></div>`}
+ ${modal&&modal.t==="login"&&h`<${Login} onClose=${()=>setModal(null)} enter=${enter}/>`}
+ ${modal&&modal.t==="offer"&&h`<${Checkout} offer=${modal.o} onClose=${()=>setModal(null)} enter=${enter}/>`}
+ ${toast&&h`<div className="toast">${toast}</div>`}</div>`;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(h`<${App}/>`);
+</script>
+</body>
+</html>
